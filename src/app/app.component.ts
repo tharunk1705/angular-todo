@@ -8,7 +8,7 @@ import { TodoService } from "./todo.service";
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  title = "Tharun's Todo App";
+  title = "Todos Today";
   constructor(private todoService : TodoService) {}
   getPending() : number {
     return this.todoService.getPending();
