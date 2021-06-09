@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+nav, nav a{
+    background-color: #512DA8;
+    color: #FFFFFF;
+    font-size: larger !important;
+}
+
+@media (max-width : 375px) {
+    span {
+        font-size: small;
+    }
+}

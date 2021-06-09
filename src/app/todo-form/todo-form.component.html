@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <form class="p-5 mt-5 border border-primary rounded" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="todo-value">Todo : </label>
+      <input class="form-control" type="text" name="todoValue" id="todo-value" [(ngModel)]="todoValue" #todoval="ngModel" required>
+      <!-- <small class="text-danger">Todo Cannot be empty</small> -->
+    </div>
+    <button class="btn btn-primary" type="submit"  [disabled]="todoval.errors" >Add to List</button>
+  </form>
+</div>
